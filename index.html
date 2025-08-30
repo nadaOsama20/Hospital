@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Al-Nada Hospital">مستشفى الندى</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo" data-en="Al-Nada Hospital" data-ar="مستشفى الندى">
+            مستشفى <span>الندى</span>
+        </div>
+
+        <nav class="navbar">
+            <i class="fas fa-bars" onclick="toggleMenu()"></i>
+            <ul>
+                <li><a href="#home" data-en="Home">الرئيسية</a></li>
+                <li><a href="#about" data-en="About Us">من نحن</a></li>
+                <li><a href="#doctors" data-en="Doctors">الأطباء</a></li>
+                <li><a href="#appointment" data-en="Appointment">احجز الان</a></li>
+                <li><a href="#reviews" data-en="Reviews">المراجعات</a></li>
+                <li><a href="#contact" data-en="Contact">تواصل</a></li>
+                <li> </li>
+
+            </ul>
+
+            <!-- أزرار اللغة -->
+            <div class="language-switch">
+                <button class="login-btn" id="openModalBtn" data-en="Login">تسجيل الدخول</button>
+                <button onclick="switchLanguage('ar')">AR</button>
+                <button onclick="switchLanguage('en')">EN</button>
+            </div>
+            <!-- زر تسجيل الدخول ثابت -->
+
+            <!-- نافذة تسجيل الدخول (Modal) -->
+            <div class="modal" id="loginModal">
+                <div class="modal-content">
+                    <button class="close-btn" id="closeModalBtn">&times;</button>
+                    <h2 style="text-align:center;" data-en="Login">تسجيل الدخول</h2>
+                    <form>
+                        <input type="text" placeholder="اسم المستخدم" data-ar="" data-en="User Name" required>
+                        <input type="password" placeholder="كلمة المرور" data-en="Password" required>
+                        <button type="submit" data-en="Submit">دخول</button>
+                    </form>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h1 data-en="Welcome to Al-Nada Hospital">أهلاً بكم في <span>مستشفى الندى</span></h1>
+
+                <p data-en="Your health is our top priority. We provide comprehensive medical care with the highest standards of quality, using the latest global medical equipment, and a team of doctors and specialists available around the clock to ensure your comfort and safety.">
+                    نضع صحتكم على رأس أولوياتنا، حيث نوفر رعاية طبية متكاملة بأعلى معايير الجودة، وبأحدث الأجهزة الطبية العالمية، مع فريق من الأطباء والمختصين يعملون لخدمتكم على مدار الساعة لضمان راحتكم وسلامتكم.
+                </p>
+                <button class="button" data-en="Book Your Appointment Now">احجز موعدك الآن</button>
+            </div>
+            <div class="images">
+                <img src="image/img1.png" alt="hospital">
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2 class="heading" data-en="About Us">من نحن</h2>
+        <p class="title" data-en="Al-Nada Hospital – Comprehensive Medical Care">
+            مستشفى الندى مركز رعاية طبية متكامل يقدّم خدمات صحية بأعلى معايير الجودة، باستخدام أحدث التقنيات الطبية، وبإشراف نخبة من الأطباء والمختصين على مدار الساعة، لنضمن لمرضانا الراحة والسلامة في كل خطوة من رحلتهم العلاجية.
+        </p>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="image/img2.jpeg" alt="">
+                <div class="content">
+                    <h3 data-en="Medical Expertise">⚕️ خبرة طبية</h3>
+                    <p data-en="Specialized doctors in various fields providing precise and comprehensive care.">
+                        أطباء متخصصون في مختلف المجالات لتقديم رعاية دقيقة وشاملة.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/img3.jpeg" alt="">
+                <div class="content">
+                    <h3 data-en="Comprehensive Services">🏥 خدمات شاملة</h3>
+                    <p data-en="From diagnosis to treatment and rehabilitation, all under one roof.">
+                        من التشخيص إلى العلاج والتأهيل تحت سقف واحد.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/img4.jpeg" alt="">
+                <div class="content">
+                    <h3 data-en="Innovation & Technology">💡 ابتكار وتقنيات</h3>
+                    <p data-en="Using the latest medical technology for faster diagnosis and more accurate treatment.">
+                        اعتماد أحدث التكنولوجيا الطبية لتشخيص أسرع وعلاج أدق.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/img5.jpeg" alt="">
+                <div class="content">
+                    <h3 data-en="Human Care">🤝 عناية إنسانية</h3>
+                    <p data-en="We care for patients physically and emotionally to ensure a safe and comfortable experience.">
+                        نهتم بالمريض جسديًا ونفسيًا لنمنحه تجربة علاجية آمنة ومريحة.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/img6.jpeg" alt="">
+                <div class="content">
+                    <h3 data-en="Advanced Laboratories">🧪 مختبرات متطورة</h3>
+                    <p data-en="Accurate and fast medical tests to ensure reliable results.">
+                        إجراء الفحوصات الطبية بدقة وسرعة لضمان نتائج موثوقة.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/img7.jpeg" alt="">
+                <div class="content">
+                    <h3 data-en="Patient Comfort">🛌 راحة المرضى</h3>
+                    <p data-en="Comfortable treatment rooms designed to provide a safe and healthy environment.">
+                        تصميم غرف علاجية مريحة توفر بيئة صحية وآمنة.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/img8.jpeg" alt="">
+                <div class="content">
+                    <h3 data-en="Personalized Care Plans">📋 خطة علاجية فردية</h3>
+                    <p data-en="Customized care programs tailored to each patient’s unique needs.">
+                        نضع لكل مريض برنامج رعاية يناسب احتياجاته الخاصة.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/img9.jpeg" alt="">
+                <div class="content">
+                    <h3 data-en="Emergency Services">🚑 خدمات طوارئ</h3>
+                    <p data-en="Full readiness to handle emergency cases 24/7.">
+                        جاهزية كاملة للتعامل مع الحالات الطارئة على مدار الساعة.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Doctors -->
+    <section class="doctors" id="doctors">
+        <h2 class="heading" data-en="Our Doctors">أطباؤنا</h2>
+        <p class="title" data-en="A team of specialized doctors at your service">
+            نخبة من الأطباء والاستشاريين في مختلف التخصصات، يجمعهم الخبرة والالتزام بتقديم أفضل رعاية طبية وإنسانية لضمان سلامتكم وراحتكم.
+        </p>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="image/dr1.jpg" alt="Dr. Ahmed Mohamed">
+                <div class="content">
+                    <h3 data-en="Dr. Ahmed Mohamed">د. أحمد محمد</h3>
+                    <p data-en="General Surgery Consultant">استشاري جراحة عامة</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/dr2.jpg" alt="Dr. Alaa Ahmed">
+                <div class="content">
+                    <h3 data-en="Dr. Alaa Ahmed">د. آلاء أحمد</h3>
+                    <p data-en="Pediatrics Consultant">استشارية أطفال</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/dr3.jpg" alt="Dr. Amir Mohamed">
+                <div class="content">
+                    <h3 data-en="Dr. Amir Mohamed">د. أمير محمد</h3>
+                    <p data-en="Internal Medicine Consultant">استشاري باطنة</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/dr4.jpg" alt="Dr. Sara Ali">
+                <div class="content">
+                    <h3 data-en="Dr. Sara Ali">د. سارة علي</h3>
+                    <p data-en="Cardiology Specialist">أخصائية قلب</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Appointment Booking -->
+    <section class="appointment" id="appointment">
+        <h2 class="heading" data-en="Book an Appointment">احجز موعدك</h2>
+        <p class="title" data-en="Schedule your visit with our specialists">حدد موعد زيارتك مع أحد أطبائنا المتخصصين</p>
+        <div class="row">
+
+            <div class="images">
+                <img src="image/book-removebg-preview.png" alt="">
+            </div>
+            <form class="appointment-form">
+                <input type="text" placeholder="الاسم الكامل" data-en="Full Name" data-ar="الاسم الكامل">
+                <input type="email" placeholder="البريد الإلكتروني" data-en="Email Address" data-ar="البريد الإلكتروني">
+                <input type="tel" placeholder="رقم الهاتف" data-en="Phone Number" data-ar="رقم الهاتف">
+                <select required>
+           
+           <option value="" disabled selected data-en="Select Department" data-ar="اختر التخصص">اختر التخصص</option>
+           <option value="general" data-en="General Medicine" data-ar="طب عام">طب عام</option>
+            <option value="pediatrics" data-en="Pediatrics">أطفال</option>
+            <option value="cardiology" data-en="Cardiology">قلب</option>
+            <option value="surgery" data-en="Surgery">جراحة</option>
+            <option value="internal" data-en="Internal Medicine">باطنة</option>
+                </select>
+                <input type="date" required>
+                <input type="time" required>
+                <input type="submit" value="حجز الآن" data-en="Book Now" data-ar="حجز الآن">
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="review" id="reviews">
+        <h2 class="heading" data-en="Patient Reviews">آراء المرضى</h2>
+        <p class="title" data-en="What our patients say about us">ماذا يقول مرضانا عنا</p>
+
+        <div class="review-wrapper">
+            <div class="box-container">
+                <!-- مراجعة 1 -->
+                <div class="box">
+                    <i class="fas fa-quote-left"></i>
+                    <br>
+                    <p data-en="Excellent service and outstanding care. Thanks to all doctors for their efforts.">خدمة رائعة ورعاية ممتازة. أشكر جميع الأطباء على جهودهم.</p>
+                    <div class="images">
+                        <img src="image/ph (1).jpeg" alt="">
+                        <div class="info">
+                            <h3 data-en="Mahmoud">محمود</h3>
+                            <span data-en="Former Patient">مريض سابق</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- مراجعة 2 -->
+                <div class="box">
+                    <i class="fas fa-quote-left"></i>
+                    <br>
+                    <p data-en="The best hospital I have ever dealt with, excellent attention and service.">أفضل مستشفى تعاملت معه، الاهتمام كبير والخدمة ممتازة.</p>
+                    <div class="images">
+                        <img src="image/ph (2).jpeg" alt="">
+                        <div class="info">
+                            <h3 data-en="Laila">ليلى</h3>
+                            <span data-en="Laila">مريضة</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- مراجعة 3 -->
+                <div class="box">
+                    <i class="fas fa-quote-left"></i>
+                    <br>
+                    <p data-en="Excellent service and outstanding care. Thanks to all doctors for their efforts.">خدمة رائعة ورعاية ممتازة. أشكر جميع الأطباء على جهودهم</p>
+                    <div class="images">
+                        <img src="image/ph (3).jpeg" alt="">
+                        <div class="info">
+                            <h3 data-en="Mohamed">محمد</h3>
+                            <span data-en="Patient">مريض</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- مراجعة 4 -->
+                <div class="box">
+                    <i class="fas fa-quote-left"></i>
+                    <br>
+                    <p data-en="Excellent service and affordable prices, recommended for everyone.">خدمة ممتازة وأسعار مناسبة، أوصي به للجميع.</p>
+                    <div class="images">
+                        <img src="image/ph (4).jpeg" alt="">
+                        <div class="info">
+                            <h3 data-en="Saeed">سعيد</h3>
+                            <span data-en="Patient">مريض</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2 class="heading" data-en="Contact Us">تواصل معنا</h2>
+        <p class="title" data-en="We are here for you 24/7">نحن هنا لخدمتكم على مدار الساعة</p>
+        <div class="row">
+            <div class="images">
+                <img src="image/co-removebg-preview.png" alt="">
+            </div>
+            <form class="form-container">
+                <input type="text" placeholder="الاسم الكامل" data-en="Full Name" data-ar="الاسم الكامل">
+                <input type="email" placeholder="البريد الإلكتروني" data-en="Email Address" data-ar="البريد الإلكتروني">
+                <textarea rows="5" placeholder="رسالتك" data-en="Mssges" data-ar="رسالتك"></textarea>
+                <input type="submit" value="إرسال" data-en="Send" data-ar="إرسال">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div>
+            <h2 data-en="Al-Nada Hospital">مستشفى الندى</h2>
+            <p data-en="Outstanding medical care since 1990, providing healthcare services of the highest quality standards and a dedicated team of experts, always with the health of our patients in mind.">رعاية طبية متميزة منذ عام 1990، نقدم خدمات صحية متكاملة بأعلى معايير الجودة وبفريق متخصص من الأطباء لضمان صحة وراحة مرضانا.</p>
+        </div>
+        <div>
+            <h2 data-en="Quick Links">روابط سريعة</h2>
+            <a href="#home" data-en="Home">الرئيسية</a>
+            <a href="#about" data-en="About Us">من نحن</a>
+            <a href="#doctors" data-en="Doctors">الأطباء</a>
+            <a href="#contact" data-en="Contact">تواصل</a>
+        </div>
+        <div>
+            <h2 data-en="Contact">تواصل معنا</h2>
+            <a href="#"><i class="fas fa-phone"></i> 123456789</a>
+            <a href="#"><i class="fas fa-envelope"></i> info@hospital.com</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> <span data-en="Gaza - Palestine">غزة - فلسطين</span></a>
+        </div>
+        <div class="social">
+            <h2 data-en="Follow Us">تابعنا</h2>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+
+        </div>
+        <div class="credit" data-en="© 2025 All rights reserved | Al-Shifa Hospital">
+            &copy; 2025 جميع الحقوق محفوظة | مستشفى الشفاء
+        </div>
+    </footer>
+
+    <!-- Scroll Top Button -->
+    <button id="scrollTop" title="العودة للأعلى"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
